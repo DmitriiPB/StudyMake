@@ -11,9 +11,8 @@ hello-dbg: hello.cpp
 
 release: hello
 
-hello.cpp
+hello: hello.cpp
  g++ -O2 hello.cpp -o hello -DNDEBUG -Wall
 
 clean:
- rm -rf hello * .o hello-dbg
-
+ rm -rf hello *.o hello-dbg
